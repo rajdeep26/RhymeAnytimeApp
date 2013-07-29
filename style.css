@@ -1,0 +1,67 @@
+@font-face {
+  font-family: FiraSans-Regular;
+  src: url("./fonts/FiraSans/FiraSans-Regular.ttf");
+}
+
+html, body { height: 100%; }
+
+body {
+  /*background: radial-gradient(ellipse at center, rgba(231,76,60,1) 0%,rgba(192,57,43,1) 100%);*/
+  color: #fff;
+  font-family: FiraSans-Regular, sans-serif;
+ 
+  /* Reset base size */
+  font-size: 16px;
+ 
+  /* Set font size relative to base size */
+  /* Check <a href="http://snook.ca/archives/html_and_css/font-size-with-rem">this</a> article on rem usage */
+  font-size: 1.4rem;
+ 
+  font-weight: 300;
+ 
+  /* Remove spacing */
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight: 300; }
+
+section[role="region"] > header:first-child h1 {
+  font-size: 2rem;
+}
+
+.myinput {
+ margin-right: 10px;
+}
+
+.submitbutton {
+   width: 50%;
+   position: relative;
+   left: 25%;
+  
+}
+
+[data-type="list"] {
+padding: 0;
+}
+
+a[role="button"].about {
+  position: fixed;
+  bottom: 0px;
+  margin: 0;
+  padding: 0px;
+  /*    To make it look like the Title bar ie: Orange */
+  
+/*  background: url(./style/headers/images/ui/header.png) repeat-x 0 0;
+  background-size: auto 100%;
+  color: #fff;*/
+}
+
+.info {
+  color: black;
+  text-align: center;
+}
+
+.info.p {
+    text-decoration: underline;
+    color: red;
+}

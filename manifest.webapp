@@ -1,0 +1,13 @@
+{
+  "name": "Rhyme Anytime",
+  "description": "App to find Rhyming words",
+  "launch_path": "index.html",
+  "icons": {
+    "128": "/img/app_icon_128.png"
+  },
+  "developer": {
+    "name": "Rajdeep Mandrekar",
+    "url": "https://twitter.com/rajdeep_26"
+  },
+  "default_locale": "en"
+}
