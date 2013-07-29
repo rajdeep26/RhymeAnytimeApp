@@ -28,16 +28,20 @@
               $json = file_get_contents('http://rhymebrain.com/talk?function=getRhymes&word='.$keyword);
               $result =json_decode($json);
               $count = 1;
+              $exact_matches= 1;
               foreach ($result as &$value) 
               {
-                // echo '<li>';
+                if (($exact_matches==1) && ($value->score!=300))
+                {
+                  echo '<li><p>No Exact Rhymes</p></li>';
+                }
                 if(($count==1)&&($value->score != 300))
                 {
                   echo '<header>Near Rhymes</header>';
                   $count +=1;
                 }
                 echo '<li><p style="padding: 20px;">'.$value->word.'</p></li>';
-                // echo '</li>'
+                $exact_matches +=1;
               }
             ?>
         </ul> 
